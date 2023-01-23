@@ -4,3 +4,26 @@
 Button.-primary {
   font-size: 18;
 }
+
+.btn {
+  background: rgb(49, 59, 164);
+  border-width: 1;
+  border-color: rgb(49, 59, 164);
+  color: white;
+  width: 100%;
+  padding: 5 10;
+  border-radius: 25%;
+  margin: 5 0;
+}
+
+@font-face {
+  font-family: 'poppins';
+  src: url(assets/fonts/poppins/Poppins-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'poppins';
+  src: url(assets/fonts/poppins/Poppins-Bold.ttf);
+  font-weight: 700;
+}

@@ -1,0 +1,23 @@
+.container {
+  background: rgb(138,138,138);
+  background: linear-gradient(180deg, rgba(138,138,138,1) 0%, rgba(80,80,80,1) 42%, rgba(23,23,65,1) 96%);
+  padding-bottom: 220;
+  .title {
+    font-family: poppins;
+    font-size: 30;
+    font-weight: 700;
+    color: #fafafa;
+  }
+  .container-texts {
+    height: auto;
+    width: 400;
+    .input {
+      background-color: #fafafabf;
+      padding: 10 0;
+      margin-bottom: 20;
+      font-family: poppins;
+      font-weight: 400;
+      font-size: 13;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+<FlexboxLayout class="container" height="auto" width="auto">
+  <FlexboxLayout class="container-texts" flexDirection="column" justifyContent="center" alignItems="center">
+    <FlexboxLayout>
+      <Label class="title" [text]="authTexts.welcome" textWrap="true"></Label>
+    </FlexboxLayout>
+    <FlexboxLayout flexDirection="column" width="200">
+      <TextField class="input" hint="Enter Date"
+          text=""
+          [hint]="authTexts.username"
+          secure="false"
+          returnKeyType="next"
+          autocorrect="false"
+          maxLength="100">
+      </TextField>
+      <TextField class="input" hint="Enter Date"
+          text=""
+          [hint]="authTexts.password"
+          secure="true"
+          returnKeyType="done"
+          (returnPress)="onReturnPress($event)"
+          autocorrect="false"
+          maxLength="18">
+      </TextField>
+      <Button class="btn" height="40" [text]="authTexts.login" (tap)="goToHomePage()"></Button>
+    </FlexboxLayout>
+  </FlexboxLayout>
+</FlexboxLayout>
