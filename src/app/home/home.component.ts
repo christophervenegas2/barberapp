@@ -11,9 +11,15 @@ import { actionBarTitle } from './texts/home.text';
 
 export class HomeComponent implements OnInit {
 
+  selectedIndex = 0;
+
   barTitle = actionBarTitle;
 
   constructor(private routerExtensions: RouterExtensions) { }
+
+  onSelectedIndexChange(newIndex: number) {
+      // handle tab change
+  }
 
 	ngOnInit() { }
 

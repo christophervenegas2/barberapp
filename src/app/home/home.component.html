@@ -1,9 +1,35 @@
-<ActionBar title="NiceCuts">
-  <NavigationButton text="Cerrar sesion" android.systemIcon="ic_menu" (tap)="goBack()"></NavigationButton>
-  <ActionItem ios.position="right" android.position="left" text="..." ></ActionItem>
-</ActionBar>
-<StackLayout>
-    <Label class="title" horizontalAlignment="center" text="XDDDDDDDDDDD" ></Label>
-    <Button text="Ingresar a.." nsRouterLink="/auth" ></Button>
-</StackLayout>
-<bottom-navigation></bottom-navigation>
+<MDBottomNavigation selectedIndex="1">
+  <!-- The bottom tab UI is created via TabStrip (the containier) and TabStripItem (for each tab)-->
+  <MDTabStrip>
+      <MDTabStripItem>
+          <Label text="Home"></Label>
+          <Image src="font://&#xf015;" class="fas"></Image>
+      </MDTabStripItem>
+      <MDTabStripItem class="special">
+          <Label text="Account"></Label>
+          <Image src="font://&#xf007;" class="fas"></Image>
+      </MDTabStripItem>
+      <MDTabStripItem class="special">
+          <Label text="Search"></Label>
+          <Image src="font://&#xf00e;" class="fa"></Image>
+      </MDTabStripItem>
+  </MDTabStrip>
+
+  <!-- The number of TabContentItem components should corespond to the number of TabStripItem components -->
+  <MDTabContentItem>
+      <GridLayout>
+          <Label [text]="'fa-home' | fonticon" class="fa"></Label>
+      </GridLayout>
+  </MDTabContentItem>
+  <MDTabContentItem>
+      <GridLayout>
+          <Label text="Account Page" class="h2 text-center"></Label>
+          <Label class="fa" [text]="'fa-bluetooth' | fonticon"></Label>
+      </GridLayout>
+  </MDTabContentItem>
+  <MDTabContentItem>
+      <GridLayout>
+          <Label text="Search Page" class="h2 text-center"></Label>
+      </GridLayout>
+  </MDTabContentItem>
+</MDBottomNavigation>

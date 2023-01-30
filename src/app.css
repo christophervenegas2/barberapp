@@ -16,6 +16,10 @@ Button.-primary {
   margin: 5 0;
 }
 
+.fa {
+  font-family: FontAwesome, fontawesome-webfont;
+}
+
 @font-face {
   font-family: 'poppins';
   src: url(assets/fonts/poppins/Poppins-Regular.ttf);
